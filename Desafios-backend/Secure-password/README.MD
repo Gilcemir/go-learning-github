@@ -59,11 +59,11 @@ You can use the test.http as example
 ### Request Body
 The body should be a JSON object with the following structure:
 
-```json
-{
-  "password": "your-password-here"
-}
-```
+    ```json
+    {
+        "password": "your-password-here"
+    }
+    ```
 
 # Running tests
 
