@@ -1,0 +1,6 @@
+Post http://localhost:8080/secure-password
+Content-Type:  application/json
+
+{
+  "password" : "el1***"
+}

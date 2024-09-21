@@ -1,17 +1,13 @@
 package main
 
 import (
-	"fmt"
-	"secure-password/internal/validator"
+	"net/http"
+	"secure-password/internal/web"
 )
 
 func main() {
-
-	password := ""
-	result, err := validator.IsValidPassword(&password)
-	if err != nil {
-		fmt.Println(err)
-	}
-	fmt.Println("Is valid password!", result)
-
+	var handler web.HttpHandler = &web.HttpHandlerImpl{}
+	router := http.NewServeMux()
+	router.HandleFunc("POST /secure-password", handler.CheckPassword)
+	http.ListenAndServe(":8080", router)
 }
