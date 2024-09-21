@@ -3,7 +3,8 @@ package web
 import (
 	"encoding/json"
 	"net/http"
-	"secure-password/internal/validator"
+
+	"github.com/Gilcemir/go-learning-github/Desafios-backend/Secure-password/internal/validator"
 )
 
 type HttpHandler interface {

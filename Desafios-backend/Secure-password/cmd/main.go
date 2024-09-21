@@ -2,7 +2,8 @@ package main
 
 import (
 	"net/http"
-	"secure-password/internal/web"
+
+	"github.com/Gilcemir/go-learning-github/Desafios-backend/Secure-password/internal/web"
 )
 
 func main() {
